@@ -1,0 +1,226 @@
+
+<html>
+	<head>
+		<title>HotKit</title>
+		<link rel="stylesheet" href="HK.CSS">
+		
+	</head>
+	<body>
+		<ul>
+			
+			<li> <a href="#karan">Home</a> </li>
+			<li> <a href="#vipul">Ingredients</a> </li>
+			<li style="font-size:30px;color:white;padding:7px 10px 7px 10px;">HotKit </li>
+			<li> <a href="#Events">Events</a> </li>
+			<li> <a href="#ls">Login/SignUp</a> </li>
+		</ul>
+		
+
+		<div id="karan" class="example1" style="padding-top:0px;">
+			<div class="w3-content w3-section" >
+		<img class="mySlides" src="res.jpg" style="width:100%;height:500px;">
+		<img class="mySlides" src="food.jpg" style="width:100%;height:500px;">
+		<img class="mySlides" src="food2.jpg" style="width:100%;height:500px;">
+		
+		</div>
+
+			<script>
+			var myIndex = 0;
+			carousel();
+
+			function carousel() {
+			var i;
+			var x = document.getElementsByClassName("mySlides");
+			for (i = 0; i < x.length; i++) {
+			x[i].style.display = "none";  
+			}
+			myIndex++;
+			if (myIndex > x.length) {myIndex = 1}    
+			x[myIndex-1].style.display = "block";  
+			setTimeout(carousel, 2000); // Change image every 2 seconds
+			}
+			</script>
+		
+			
+		</div>	
+		<div id="karan" class="examplea" >
+			<h1> Trending Recipies</h1>
+			
+				<a href="#">Choclate Cake</a><br><br><br><br>
+				<a href="#">Ice-Cream</a><br><br><br><br>
+				<a href="#">Biryani</a><br><br><br><br>
+				<a href="#">Pizza</a><br><br><br><br>
+			
+			
+		</div>	
+
+		
+		
+		
+		<div id="vipul" style="padding-top:50px;height:500px;">
+		<p>Make your own Dish</p>
+		<h2 style="padding-left:10px;">Welcome to the NEW HotKitFood!!  Thank you so much for stopping by, please feel free to take a look around :)
+		Send all hate mail and suggestions to Hotkit.com :)
+        </h2>
+		<a href="www.google.com"><input type="submit"></a>
+		<br>
+		<br><br>
+		
+<form action="HotkitK.html" >
+<label class="container" style="background-color:Orange;" ><input type="checkbox" id="myCheck" name="Checklist" value="One" onclick="myFunction()">Egg</label>
+<label class="container"style="background-color:Orange;"><input type="checkbox" id="myCheck1" name="Checklist" value="Two" onclick="myFunction()">Vegetable Oil</label>
+<label class="container"style="background-color:Orange;"><input  type="checkbox" id="myCheck2" name="Checklist" value="Three" onclick="myFunction()">Sugar</label>
+<br><br><br><br><br>
+<label class="container"style="background-color:Orange;" ><input  type="checkbox"  id="myCheck5" name="Checklist" value="Five" onclick="myFunction()">ButterMilk</label>
+<label class="container"style="background-color:Orange;"><input  type="checkbox" id="myCheck6" name="Checklist" value="Six" onclick="myFunction()">Cocoa</label>
+<br><br><br><br><br>
+<label class="container"style="background-color:Orange;"><input  type="checkbox" id="myCheck7" name="Checklist" value="Seven" onclick="myFunction()">VanillaPudding</label>
+
+<p id="text" style="display:none ;margin-top:-20%;margin-left:50%;font-size:20px;padding:10px">Egg</p>
+<p id="text1" style="display:none;font-size:20px;margin-left:50%;padding:10px">Vegetable Oil</p>
+<p id="text2" style="display:none;font-size:20px;margin-left:50%;padding:10px">Sugar</p>
+<p id="text5" style="display:none;font-size:20px;margin-left:50%;padding:10px">ButterMilk</p>
+<p id="text6" style="display:none;font-size:20px;margin-left:50%;padding:10px">Cocoa</p>
+<p id="text7" style="display:none;font-size:20px;margin-left:50%;padding:10px">VanillaPudding</p>
+<br><br><br>
+</form>
+	<script>
+function myFunction() {
+    var checkBox = document.getElementById("myCheck");
+	 var checkBox1 = document.getElementById("myCheck1");
+	 var checkBox2 = document.getElementById("myCheck2");
+	
+	 
+    var text = document.getElementById("text");
+	var text1 = document.getElementById("text1");
+	var text2 = document.getElementById("text2");
+	
+	
+    if (checkBox.checked == true){
+        text.style.display = "block";
+    } else {
+       text.style.display = "none";
+    }
+	 if (checkBox1.checked == true){
+        text1.style.display = "block";
+    } else {
+       text1.style.display = "none";
+    }
+	 if (checkBox2.checked == true){
+        text2.style.display = "block";
+    } else {
+       text2.style.display = "none";
+    }
+	 
+	  var checkBox5 = document.getElementById("myCheck5");
+	 var checkBox6 = document.getElementById("myCheck6");
+	 var checkBox7 = document.getElementById("myCheck7");
+	 
+	 
+    var text5 = document.getElementById("text5");
+	var text6 = document.getElementById("text6");
+	var text7 = document.getElementById("text7");
+	
+	
+    if (checkBox5.checked == true){
+        text5.style.display = "block";
+    } else {
+       text5.style.display = "none";
+    }
+	 if (checkBox6.checked == true){
+        text6.style.display = "block";
+    } else {
+       text6.style.display = "none";
+    }
+	 if (checkBox7.checked == true){
+        text7.style.display = "block";
+    } else {
+       text7.style.display = "none";
+    }
+	
+}
+</script>
+
+</div>
+
+<div id="Events" class="example3"  style="padding-bottom:5px;height:600px;">
+
+	<div id="header">
+		<h1> Upcoming Events</h1>
+		</div>
+		<div id="box1">
+		<p>Perform in our weekly contests by submitting your recipe from the given ingredients.
+		Best dish will be uploaded on our website.</p>
+		<a href="#"><img src="arrow.jpg" ></a>
+		</div>
+		
+		<div id="box2">
+		<h1>This Week's Ingredients</h1>
+		<h2>
+		Butter<br>
+		Choclate Powder<br>
+		Essence<br>
+		Wine<br>
+		Egg<br>
+		</h2>
+		<br>
+		
+
+
+		</div>
+		
+	
+</div>
+
+		<div id="ls" style="padding-bottom:5px;background-color:gray;height:600px;">
+
+		<div class="example3">
+		
+		
+			
+
+<div class="container" id="box4">
+  <form  method="post" action="#">
+	<h1 style="text-align:center;">SignUp </h1>
+    <label for="fname"></label>
+    <input type="text" id="fname" name="Name" placeholder="Name">
+
+    <label for="lname"></label>
+    <input type="text" id="email" name="Email" placeholder="Email">
+
+  
+
+    <label for="lname"></label>
+    <input type="Password" id="password" name="Password" placeholder="Password">
+
+	 <label for="lname"></label>
+    <input type="Password" id="lname" name="CPassword" placeholder="Confirm Password">
+
+	
+    <input type="submit" value="Submit" name="signup" style="background-color:orange;">
+  </form>
+  </div>
+
+  
+	
+<div class="container" id="box5">
+  <form action="#"method="post">
+	<h1 style="text-align:center;">Login </h1>
+    <label for="Email"></label>
+    <input type="text" id="email" name="Email" placeholder="Email">
+
+
+    <label for="lname"></label>
+    <input type="Password" id="lpassword" name="lpassword" placeholder="Password">
+
+    <input type="submit" value="login" name="login" style="background-color:orange;">
+  </form>
+  </div>
+
+		</div>
+
+</div>
+
+
+	</body>
+</html>
